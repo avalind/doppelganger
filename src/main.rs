@@ -16,7 +16,8 @@ fn main() {
     // first, handle the arguments
     let args: Vec<String> = env::args().collect();
     if args.len() < 2 {
-        panic!("Usage: doppelganger [input bam]");
+        println!("Usage: doppelganger [input bam] > output.bam");
+        return;
     };
 
     let path = &args[1];
